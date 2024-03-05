@@ -7,7 +7,7 @@ import kotlin.Unit;
 public class UniPush {
 
 
-  public static void xiaomi() {
+  public static void xiaomiActivity() {
 
 
   }
