@@ -66,5 +66,6 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation(project(mapOf("path" to ":uniapp-push")))
     implementation(files("libs/MiPush_SDK_Client_6_0_1-C_3rd.aar"))
 }
