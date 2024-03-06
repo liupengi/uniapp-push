@@ -37,7 +37,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation(files("libs/MiPush_SDK_Client_6_0_1-C_3rd.aar"))
+    implementation(project(mapOf("path" to ":push-aar")))
 }
 val GROUP_ID = "easemob.com.uniapp"
 val ARTIFACT_ID = "jitpack-lib-sample"

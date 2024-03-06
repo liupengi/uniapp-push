@@ -16,3 +16,5 @@ dependencyResolutionManagement {
 rootProject.name = "Uniapp"
 include(":app")
 include(":uniapp-push")
+include(":push-aar")
+
