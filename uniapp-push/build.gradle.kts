@@ -40,7 +40,7 @@ dependencies {
 }
 val GROUP_ID = "easemob.com.uniapp"
 val ARTIFACT_ID = "jitpack-lib-sample"
-val VERSION = "0.1.4"
+val VERSION = "0.1.5"
 publishing { // 发布配置
     publications { // 发布的内容
         register<MavenPublication>("uniapp-push") { // 注册一个名字为 release 的发布内容
@@ -49,7 +49,7 @@ publishing { // 发布配置
             version = VERSION
 
 
-            artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+ //           artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
 //            afterEvaluate { // 在所有的配置都完成之后执行
 //                // 从当前 module 的 release 包中发布
 //                from(components["release"])
