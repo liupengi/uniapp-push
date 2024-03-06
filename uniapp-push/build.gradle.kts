@@ -38,3 +38,20 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+val GROUP_ID = "easemob.com.uniapp"
+val ARTIFACT_ID = "jitpack-lib-sample"
+val VERSION = "0.1.2"
+publishing { // 发布配置
+    publications { // 发布的内容
+        register<MavenPublication>("uniapp-push") { // 注册一个名字为 release 的发布内容
+            groupId = GROUP_ID
+            artifactId = ARTIFACT_ID
+            version = VERSION
+
+//            afterEvaluate { // 在所有的配置都完成之后执行
+//                // 从当前 module 的 release 包中发布
+//                from(components["release"])
+//            }
+        }
+    }
+}
