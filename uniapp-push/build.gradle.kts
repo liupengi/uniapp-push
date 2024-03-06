@@ -41,7 +41,7 @@ dependencies {
 }
 val GROUP_ID = "easemob.com.uniapp"
 val ARTIFACT_ID = "jitpack-lib-sample"
-val VERSION = "0.1.5"
+val VERSION = "0.1.6"
 publishing { // 发布配置
     publications { // 发布的内容
         register<MavenPublication>("uniapp-push") { // 注册一个名字为 release 的发布内容
