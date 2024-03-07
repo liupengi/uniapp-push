@@ -44,10 +44,14 @@ val ARTIFACT_ID = "jitpack-lib-sample"
 val VERSION = "0.1.6"
 publishing { // 发布配置
     publications { // 发布的内容
-        register<MavenPublication>("uniapp-push") { // 注册一个名字为 release 的发布内容
+        register<MavenPublication>("release") { // 注册一个名字为 release 的发布内容
             groupId = GROUP_ID
             artifactId = ARTIFACT_ID
             version = VERSION
+            val component = components.find {
+                it.name == "java" || it.name == "release"
+            }
+            from(component)
 
 
  //           artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
